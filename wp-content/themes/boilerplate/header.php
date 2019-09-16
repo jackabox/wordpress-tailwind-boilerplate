@@ -16,11 +16,15 @@
 
 <body <?php body_class(); ?>>
   <header>
-    <a href="<?= esc_url(home_url()); ?>">Sitename</a>
+    <div class="container">
+      <a href="<?= esc_url(home_url()); ?>">Sitename</a>
 
-    <nav class="nav" role="navigation">
-
-    </nav>
+      <nav class="nav" role="navigation">
+        <?php wp_nav_menu([
+          'menu' => 'header'
+        ]) ?>
+      </nav>
+    </div>
   </header>
 
   <main role="content">

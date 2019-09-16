@@ -1,5 +1,10 @@
 @import 'tailwindcss/base';
 
+@import 'base/base';
+@import 'base/forms';
+@import 'base/grid';
+@import 'base/typography';
+
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
